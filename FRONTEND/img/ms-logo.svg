@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="ms-logo.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g431"
+       transform="matrix(0.76973344,0,0,0.76973344,3.6902212,3.6839628)">
+      <rect
+         style="fill:#000000"
+         id="rect419"
+         width="14"
+         height="14"
+         x="0.051732961"
+         y="-14"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#666666"
+         id="rect421"
+         width="14"
+         height="14"
+         x="18"
+         y="-14"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#4d4d4d"
+         id="rect423"
+         width="14"
+         height="14"
+         x="18"
+         y="-31.997375"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#333333"
+         id="rect425"
+         width="14"
+         height="14"
+         x="0.051732961"
+         y="-31.997375"
+         transform="scale(1,-1)" />
+    </g>
+  </g>
+</svg>

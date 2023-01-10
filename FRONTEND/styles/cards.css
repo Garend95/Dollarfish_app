@@ -1,0 +1,583 @@
+:root {
+    --clr-primary: #109648;
+    --clr-primary-darker: #0A5C2C;  
+    --clr-black: #080708;
+    --clr-link: #2081C3;
+    --clr-white: #FFF;
+    --clr-neutral-bckd: #E0E2DB;
+    --clr-faint-bckd: #9EA38F;
+    --clr-red: #D64933;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-statistic: 'Inter', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+    background-color: var(--clr-neutral-bckd);
+}
+
+h2 {
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+    font-family: var(--font-primary);
+    font-size: 34px;
+}
+
+
+#cardConfirmButton {
+    padding: 8px 20px;
+    
+    border: 0px;
+    border-radius: 5px;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+}
+
+#cancel {
+padding: 7px 20px;
+    
+    border-radius: 5px;
+    border: 1.5px solid black;
+    background-color: var(--clr-white);
+}
+
+#cardConfirmButton, #cancel {
+    font-family: var(--font-primary);
+    font-family: 17px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 0px;
+    background-color: var(--clr-neutral-bckd);
+    padding: 12px 0px 12px 10px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-family:var(--font-secondary);
+    font-weight:400;
+    font-size: 14px;
+}
+
+label {
+    font-family: var(--font-secondary) ;
+    font-size: 17px;
+    font-weight: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-link);
+}
+
+.seperator {
+    width: 100%;
+    background-color: var(--clr-black);
+    height: 2px;
+}
+
+/* Phone */
+@media screen and (min-width: 0px) and (max-width: 460px){
+    .main {
+        min-width: 273px;
+        min-height: 400px;
+    }
+    
+    #logo {
+        max-width: 69px;
+        max-height: 105px;
+    }
+    
+    .canvas {
+        padding: 35px;
+    }
+
+    h2 {
+    	font-size: 17px;
+    }
+
+    label {
+    	font-size: 16px;
+    }
+
+    #user {
+        visibility: collapse;
+    }
+
+    #burgerMenu {
+        visibility: visible;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 0px) and (max-width: 1024px){
+    
+    #leftMargin, #rightMargin {
+        visibility: collapse;
+        display: none;
+    }
+    
+    .interface {
+        justify-content: center;
+    }
+    
+    .main {
+        min-width: 460px;
+        flex: 0 1 780px;
+        margin: 20px;
+    }
+
+    .canvas {
+        padding: 35px;
+    }
+
+    #user {
+        visibility: collapse;
+    }
+
+    #burgerMenu {
+        visibility: visible;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    #leftMargin, #rightMargin {
+        visibility: visible;
+        display: block;
+    }
+    
+    .interface {
+        justify-content: start;
+    }
+    
+    .canvas {
+        padding: 50px 100px;
+
+    }
+    .main {
+        flex: 0 0 780px;
+    }
+
+    #user {
+        visibility: visible;
+    }
+
+    #burgerMenu {
+        visibility: collapse;
+        display: none;
+    }
+}
+
+.pageHead{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 0px 11%;
+}
+
+.interface {
+    display: flex;
+    flex-direction: row;
+    
+    justify-self: stretch;
+    flex: 0 0 810px;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+}
+
+.main {
+    max-width: 980px;
+    max-height: 100%;
+    /* width: 980px; */
+    background-color: white;
+    border-radius: 5px;
+}
+
+#leftMargin, #rightMargin {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+#menuSection {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    /* border: 2px solid green; */
+    height: 100%;
+    margin-top: 115px;
+}
+
+#menuTabs {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+
+    margin-left: 40px;
+}
+
+#menuTabs > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav {
+    display: flex;
+
+
+    align-items: center;
+    column-gap: 10px;
+    
+    padding: 5px 30px 5px 10px;
+
+    border: 1px solid var(--clr-black);
+    border-radius: 5px 0px 0px 5px;
+    max-width: 17vw;
+    
+    border-width: 1px 0px 1px 1px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav > span,
+.selected > span {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+
+    column-gap: 10px;
+    padding: 10px 30px 10px 10px;
+    white-space: nowrap;
+
+    overflow: hidden;
+    box-shadow: 0px 4px 1px rgba(0, 0,0,25%);
+    background-color: white;
+    
+    border-width: 0px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    
+    
+}
+
+.canvas > h2 {
+    margin: 0px;
+}
+
+#card_number_to_insert {
+    max-width: 220px;
+    flex-grow: 1;
+}
+
+
+
+.add_new_card_button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    
+    width: fit-content;
+    border: 2px solid var(--clr-primary);
+    padding: 8px 20px;
+    border-radius: 10px;
+
+
+}
+
+.add_new_card_button > span {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 17px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.add_new_card_button > span {
+    color: var(--clr-primary);
+}
+
+.add_new_card_button > img {
+    color: var(--clr-primary);
+
+    width: 1rem;
+    height: 1rem;
+}
+
+fieldset {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+    
+    column-gap: 30px;
+
+    border: 0px;
+}
+
+.cardFillForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    padding: 35px 40px 40px 35px;
+
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cardNumberPrompt {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 4px;
+}
+
+.cardBrandAndNumber {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 100%;
+}
+
+.cardInfoPrompt {
+    display: flex;
+    column-gap: 80px ;
+}
+
+.cardExpirationPrompt {
+    display: flex;
+    column-gap: 30px;
+}
+
+.cardExpirationPrompt > div {
+    display: flex;
+    gap: 4px;
+}
+
+
+select {
+    flex-grow: 1;
+}
+
+#expiration_year {
+    height: 36px;
+}
+
+.cardSecurityCodePrompt {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cardExpirationPrompt > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#expiration_year {
+    align-self: flex-end;
+}
+
+
+.cardSecurityCodePrompt {
+    display: node;
+    flex-direction: column;
+}
+
+
+.cardConfirmation {
+    align-self: flex-end;
+}
+
+#cancel {
+    
+}
+@media screen and (max-width: 526px) {
+    .signUpInWrapper, .main {
+        margin: 0px 20px;
+    }
+
+    
+    
+}
+
+option {
+    border: 1px solid red;
+}
+
+ul {
+    padding: 0;
+}
+
+#cardListContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cardList {
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+#cardListContainer > button {
+    align-self: flex-end;
+}
+
+.userCard {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardNumberSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardExpirationSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.registeredExpirationDate,
+.registedCardNumber {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.profileMenu {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: 4;
+    /* background-color: white; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menuOption {
+    position: relative;
+    top: 5px;
+    left: 45px;
+    padding: 8px 30px 8px 10px;
+    
+    background-color: white;
+    border-radius: 5px;
+    
+    
+}
+
+#userButton {
+    display: flex;
+    gap: 8px;
+
+    padding: 5px;
+
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 32px;
+}
+
+#profilePic {
+    
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+#seperator {
+    height: 2rem;
+    background-color: rgba(0,0,0,25%);
+    width: 2px;
+}
+
+#my_subscription_list {
+
+    padding: 50px;
+}
+
+#userButton > span,
+.profileMenu > span {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 14px
+}
+
+.nav,
+.selected,
+.menuOption,
+#userButton {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fieldWarning {
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.fieldWarning > li {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.FieldAndWarnings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+
+    width: 100%;
+}
+
+.fieldWarning {
+    color: var(--clr-red)
+}
+
+#expiration_month {
+    height: 36px;    
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=
+    "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="page">
+        <img src="./img/Logo_large.svg" id="logo">
+        <div class="signUpInWrapper">
+            <div id="signUpForm">
+                <div id="formContainer">
+                    <h2>Just a few steps...</h2>
+                    <div class="FormFields">
+                        <div class="FieldAndWarnings">
+                            <div id="nameFields">
+                                    <div id="firstName">
+                                        <label for="first_name">First Name</label>
+                                        <input name="first_name" type="text" id="first_name_field" placeholder="Enter first name">
+                                    </div>
+                                    <div id="lastName">
+                                        <label for="last_name">Last Name</label>
+                                        <input name="last_name" type="text" id="last_name_field" placeholder="Enter last name">
+                                    </div>
+                            </div>  
+                            <ul class="fieldWarning" id="nameWarning">
+                                <li>hi</li>
+                            </ul>
+                        </div>
+                        <div class="FieldAndWarnings">
+                            <div id="emailField">
+                                <label for="email_address">Email Address</label>
+                                <input name="email_address" type="text" id="email_field" placeholder="Enter email address">
+                            </div>
+                            <ul class="fieldWarning" id="emailSignUpWarning">
+                                <li>hi</li>
+                            </ul>
+                        </div>
+                        <div class="FieldAndWarnings">
+                            <div id="passwordField">
+                                <label for="password">Password</label>
+                                <input name="password" type="password" id="password_field" placeholder="Enter password">
+                            </div>
+                            <ul class="fieldWarning" id="passwordSignUpWarning">
+                                <li>hi</li>
+                            </ul>
+                        </div>
+                        <div id="agreement">
+                            <input type="checkbox" id="agreement_mark">
+                            <span>I have read and agree to the <a target="_blank">Terms of Service</a> and <a target="_blank">Privacy Policy</a>.</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="actions">
+                    <a class="haveAccount" target="_blank" href="./sign_in.html">Have an account?</a>
+                    <a id="signUpLink">
+                        <input type="submit" value="Sign Up" id="signUpButton">
+                    </a>
+                </div>
+            </div>
+            <div id="quickSignUp">
+                <div class="heading">
+                    <div class="seperator"></div>
+                    <span>Or sign up with</span>
+                    <div class="seperator"></div>
+                </div>
+                <div class="services">
+                    <img class="serviceIcon" src="./img/u_apple.svg">
+                    <img class="serviceIcon" src="./img/u_google.svg">
+                    <img class="serviceIcon" src="./img/u_facebook-f.svg">
+                    <img class="serviceIcon" src="./img/u_twitter.svg">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

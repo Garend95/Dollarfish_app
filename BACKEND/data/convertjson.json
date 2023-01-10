@@ -1,0 +1,18 @@
+[
+ {
+   "FIELD1": 1,
+   "A": "Customer_id",
+   "B": "email",
+   "C": "password",
+   "D": "first name",
+   "E": "last name"
+ },
+ {
+   "FIELD1": 2,
+   "A": "1",
+   "B": "example@example.com",
+   "C": "Testing123!",
+   "D": "Mark",
+   "E": "Stevens"
+ }
+]

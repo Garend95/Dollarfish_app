@@ -1,0 +1,41 @@
+[
+	{
+		"subs_record_id" : 25,
+		"subscription_id" : 5,
+		"card_id" : 5678955443311217,
+		"subscription_name" : "Microsoft 365",
+		"autopay_plan_name" : "Family",
+		"autopay_type" : "Yearly",
+		"next_billing_date" : "2023-06-02",
+		"amount_to_pay" : 99.99,
+		"logo_id" : 5,
+		"sub_category_id" : 621,
+		"sub_pay_id" : 5
+	},
+	{
+		"subs_record_id" : 578,
+		"subscription_id" : 6,
+		"card_id" : 5678955443311217,
+		"subscription_name" : "Netflix",
+		"autopay_plan_name" : "Basic",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-11-30",
+		"amount_to_pay" : 9.99,
+		"logo_id" : 6,
+		"sub_category_id" : 3,
+		"sub_pay_id" : 6
+	},
+	{
+		"subs_record_id" : 697,
+		"subscription_id" : 7,
+		"card_id" : 5678955443311217,
+		"subscription_name" : "Duolingo",
+		"autopay_plan_name" : "Super",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-12-03",
+		"amount_to_pay" : 3.34,
+		"logo_id" : 7,
+		"sub_category_id" : 9,
+		"sub_pay_id" : 7
+	}
+]

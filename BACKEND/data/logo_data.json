@@ -1,0 +1,30 @@
+[
+ {
+   "subscription_id": 1,
+   "subscription_logo": "./img/adobe_icon.svg"
+ },
+ {
+   "subscription_id": 2,
+   "subscription_logo": "./img/u_slack.svg"
+ },
+ {
+   "subscription_id": 3,
+   "subscription_logo": "./img/u_amazon.svg"
+ },
+ {
+   "subscription_id": 4,
+   "subscription_logo": "./img/u_google.svg"
+ },
+ {
+   "subscription_id": 5,
+   "subscription_logo": "./img/ms-logo.svg"
+ },
+ {
+   "subscription_id": 6,
+   "subscription_logo": "./img/netflix-logo.svg"
+ },
+ {
+   "subscription_id": 7,
+   "subscription_logo": "./img/duolingo-logo.svg"
+ }
+]

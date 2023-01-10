@@ -1,0 +1,54 @@
+[
+	{
+		"subs_record_id" : 53,
+		"subscription_id" : 1,
+		"card_id" : 4567891011121314,
+		"subscription_name" : "Adobe Creative Cloud",
+		"autopay_plan_name" : "Business",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-12-10",
+		"amount_to_pay" : 82.49,
+		"logo_id" : 1,
+		"sub_category_id" : 11,
+		"sub_pay_id" : 1
+	},
+	{
+		"subs_record_id" : 5,
+		"subscription_id" : 2,
+		"card_id" : 4567891011121314,
+		"subscription_name" : "Slack",
+		"autopay_plan_name" : "Business+",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-12-16",
+		"amount_to_pay" : 12.55,
+		"logo_id" : 2,
+		"sub_category_id" : 12,
+		"sub_pay_id" : 2
+	},
+	{
+		"subs_record_id" : 42,
+		"subscription_id" : 3,
+		"card_id" : 4567891011121314,
+		"subscription_name" : "Amazon Prime",
+		"autopay_plan_name" : "Prime",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-12-09",
+		"amount_to_pay" : 14.99,
+		"logo_id" : 3,
+		"sub_category_id" : 31,
+		"sub_pay_id" : 3
+	},
+	{
+		"subs_record_id" : 123,
+		"subscription_id" : 4,
+		"card_id" : 4567891011121314,
+		"subscription_name" : "Grammarly",
+		"autopay_plan_name" : "Business",
+		"autopay_type" : "Monthly",
+		"next_billing_date" : "2022-12-10",
+		"amount_to_pay" : 14.99,
+		"logo_id" : 4,
+		"sub_category_id" : 57,
+		"sub_pay_id" : 4
+	}
+]

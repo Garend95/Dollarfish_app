@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/cards.css">
+        <title>My cards</title>
+    </head>
+    <body>
+    <div class="mainPage">
+        <div class="pageHead">
+            <div id="logoMark">
+                <img src="./img/Logo_desktop_small.svg" alt="DollarFish logo mark">
+            </div>
+            <div id="user">
+                <!-- <img src="./img/User_lofi.svg" alt="User profile button"> -->
+                <div id="userButton">
+                    <img src="./img/u_user-circle.svg"id="profilePic"></img>
+                    <div id="seperator"></div>
+                    <span>Garen</span>
+                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+                </div>
+                <div class="profileMenu">
+                    <span class="menuOption" id="myProfileButton">My Profile</span>
+                    <span class="menuOption" id="settingsButton">Settings</span>
+                    <span class="menuOption" id="LogoutButton"><a href="./index.html" target="_parent">Log Out</a></span>
+                </div>
+            </div>
+            <div id="burgerMenu">
+                <img src="./img/fi_menu.svg" alt="Burger Menu">
+            </div>
+        </div>
+        <div class="interface">
+            <div id="leftMargin">
+                <div id="menuSection">
+                    <div id="menuTabs">
+                        <div class="selected" id="myCards"><img src="./img/u_credit-card.svg" alt="card icon"><span>My Cards</span></div>
+                        <a href="./my_subscriptions.html">
+                            <div class="nav" id="mySubscriptions"><img src="./img/u_shopping-bag.svg" alt="shopping Subscription icon"><span>My Subscriptions</span></div>
+                        </a>
+                        <div class="nav" id="myCategories"><img src="./img/u_flask.svg" alt="category flask icon"><span>My Categories</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="canvas" id="add_card_empty">
+                    <h2>Let's get you started</h2>
+                    <div class="add_new_card_button">
+                        <span>Add new card</span>
+                        <img src="./img/Plus_small.svg" alt="new card plus">
+                    </div>
+                </div>
+                <div class="canvas" id="add_card_filling">
+                    <h2>Let's get you started</h2>
+                    <div class="cardFillForm">
+                        <div class="cardTypes">
+                            <ul class="fieldWarning" id="cardWarning">
+                                <li>hi</li>
+                            </ul>
+                            <fieldset>
+                                <div>
+                                    <input type="radio" name="cardSelect" id="credit_card" value="credit_card" checked>
+                                    <label for="credit_card">Credit Card</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="cardSelect" id="debit_card" value="debit_card">
+                                    <label for="debit_card">Debit Card</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="FieldAndWarnings">
+                            <div class="cardNumberPrompt">
+                                <label for="card_number_to_insert"><span>Card Number (we recognize all major brands)</span></label>
+                                <div class="cardBrandAndNumber">
+                                    <span id="card_brand"><i>Visa</i></span>
+                                    <input type="text" id="card_number_to_insert" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                </div>
+                            </div>
+                            <ul class="fieldWarning" id="cardWarning">
+                                <li>hi</li>
+                            </ul>
+                        </div>
+                        <div class="FieldAndWarnings">
+                            <div class="cardInfoPrompt">
+                                <div class="cardExpirationPrompt">
+                                    <div>
+                                        <label for="expiration_month" id="expiration_date_label">Expiration</label>
+                                        <select id="expiration_month" name="expirationMonth">
+                                            <option value="">Month</option>
+                                            <option value="0">January</option>
+                                            <option value="1">February</option>
+                                            <option value="2">March</option>
+                                            <option value="3">April</option>
+                                            <option value="4">May</option>
+                                            <option value="5">June</option>
+                                            <option value="6">July</option>
+                                            <option value="7">August</option>
+                                            <option value="8">September</option>
+                                            <option value="9">October</option>
+                                            <option value="10">November</option>
+                                            <option value="11">December</option>
+                                        </select>
+                                    </div>
+                                    <select id="expiration_year" name="expirationYear">
+                                        <option value="">Year</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="fieldWarning" id="expirationDateWarning">
+                                <li>hi</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cardConfirmation">
+                        <button id="cancel">cancel</button>
+                        <a target="_self"><button id="cardConfirmButton">Confirm</button></a>
+                    </div>
+                </div>
+                <div class="canvas" id="card_added">
+                    <h2>Your Cards</h2>
+                    <div id="cardListContainer">
+                        <ul id="cardList">
+                            
+                            <!-- <li id="card_2">
+                                <div class="userCard">
+                                    <div class="cardNumberSection">
+                                        <span>Card Number</span>
+                                        <div>
+                                            <span class="registeredCardBrand">V</span>
+                                            <span class="registeredCardNumber">4XXX XXXX XXXX XXXX</span>
+                                        </div>
+                                    </div> 
+                                     <div class="cardExpirationSection">
+                                        <span>Expiration</span>
+                                        <span class="registeredExpirationDate">MM/YYYY</span>
+                                    </div> 
+                                    <a>Details</a>
+                                </div>
+                            </li> -->
+                            
+                            
+                        </ul>
+                        <button>Add another card</button>
+                    </div>
+                </div>
+            </div>
+            <div id="rightMargin"></div>
+        </div>
+    </div> 
+    <script src="./scripts/my_cards.js"></script>
+</body>
+</html>

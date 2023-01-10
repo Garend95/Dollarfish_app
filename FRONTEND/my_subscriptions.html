@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/subscriptions.css">
+        <script src="./scripts/subscriptions.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js" id="pieChart"></script> -->
+        
+    <title>My subscriptions</title>
+</head>
+<body>
+    <div class="mainPage">
+        <div class="pageHead">
+            <div id="logoMark">
+                <img src="./img/Logo_desktop_small.svg" alt="DollarFish logo mark">
+            </div>
+            <div id="user">
+                <!-- <img src="./img/User_lofi.svg" alt="User profile button"> -->
+                <div id="userButton">
+                    <img src='./img/u_user-circle.svg'id="profilePic"></img>
+                    <div id="seperator"></div>
+                    <span>Garen</span>
+                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+
+                </div>
+                <div class="profileMenu">
+                    <span class="menuOption" id="myProfileButton">My Profile</span>
+                    <span class="menuOption" id="settingsButton">Settings</span>
+                    <span class="menuOption" id="LogoutButton">Log Out</span>
+
+                </div>
+            </div>
+            <div id="burgerMenu">
+                <img src="./img/fi_menu.svg" alt="Burger Menu">
+            </div>
+        </div>
+        <div class="interface">
+            <div id="leftMargin">
+                <div id="menuSection">
+                    <div id="menuTabs">
+                        <a href="./my_cards.html">
+                            <div class="nav" id="myCards"><img src="./img/u_credit-card.svg" alt="card icon"><span>My Cards</span></div>
+                        </a>
+                        <div class= "selected" class="nav" id="mySubscriptions"><img src="./img/u_shopping-bag.svg" alt="shopping Subscription icon"><span>My Subscriptions</span></div>
+                        <div class="nav" id="myCategories"><img src="./img/u_flask.svg" alt="category flask icon"><span>My Categories</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="subscriptionTabs">
+                    <div class="nav" class="selected" id="subsView"><img src="./img/u_shopping-bag.svg" alt="subscription View"><span>Subscriptions</span></div>
+                    <div class="nav" id="insightsView"><img src="./img/fi_pie-chart.svg" alt="insight View"><span>Insights</span></div>  
+                </div>
+                <div class="main">
+                    <div class="canvas" id="my_subscription_list">
+                        <div class="subscriptionsPanel">
+                            <h2>Subscriptions</h2>
+                            <div class="filterCategories" id="cardFilters">
+                                <div class="filterBox" id="sortSelect">
+                                    <span>Sort By: A-Z</span>
+                                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+                                </div>
+                                <div class="filterBox" id="viewSelect">
+                                    <span>View: Detail</span>
+                                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+                                </div>
+                                <div class="filterBox" id="categorySelect">
+                                    <span>Categories: All</span>
+                                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+                                </div>
+                            </div>
+                            <div class="subsWrapper">
+                                
+                            </div>
+                        </div>
+                        <div class="insightsPanel">
+                            <div class="titleAndChart">
+                                <h4>Insights</h4>
+                                <img src="./img/pieChart.svg" id="pieChart">
+                            </div>
+                            <div class="insightStats">
+                                <div class="filterBox" id="periodSelect">
+                                    <span>Period: 2022</span>
+                                    <img src="./img/u_arrow-down.svg" alt="dropdown arrow">
+                                </div>
+                                <table>
+                                        <tr>
+                                            <td>Total spent in a month</td>
+                                            <td>Total spent in 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="statNumber">$124.97</td>
+                                            <td class="statNumber">$1,124.73</td>
+                                        </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td>Total expected by end of 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="statNumber">$1300</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td>Most spent Category</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="productCategories">
+                                            <span class="productivityTag">Productivity</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightMargin"></div>
+        </div>
+    </div> 
+</body>
+</html>

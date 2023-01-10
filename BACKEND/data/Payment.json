@@ -1,0 +1,359 @@
+[
+ {
+   "payment_id": 1,
+   "subscription_id": 1,
+   "receipt_id": 155071668,
+   "payment_date": "2022-10-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 2,
+   "subscription_id": 1,
+   "receipt_id": 584240360,
+   "payment_date": "2022-09-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 3,
+   "subscription_id": 1,
+   "receipt_id": 88949672,
+   "payment_date": "2022-08-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 4,
+   "subscription_id": 1,
+   "receipt_id": 285444396,
+   "payment_date": "2022-07-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 5,
+   "subscription_id": 1,
+   "receipt_id": 377006053,
+   "payment_date": "2022-06-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 6,
+   "subscription_id": 1,
+   "receipt_id": 787288506,
+   "payment_date": "2022-05-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 7,
+   "subscription_id": 1,
+   "receipt_id": 563708908,
+   "payment_date": "2022-04-10",
+   "payment_amount": 82.49
+ },
+ {
+   "payment_id": 8,
+   "subscription_id": 2,
+   "receipt_id": 217799925,
+   "payment_date": "2022-11-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 9,
+   "subscription_id": 2,
+   "receipt_id": 990947417,
+   "payment_date": "2022-10-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 10,
+   "subscription_id": 2,
+   "receipt_id": 473049068,
+   "payment_date": "2022-09-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 11,
+   "subscription_id": 2,
+   "receipt_id": 77172096,
+   "payment_date": "2022-08-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 12,
+   "subscription_id": 2,
+   "receipt_id": 288342330,
+   "payment_date": "2022-07-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 13,
+   "subscription_id": 2,
+   "receipt_id": 67835408,
+   "payment_date": "2022-06-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 14,
+   "subscription_id": 2,
+   "receipt_id": 418038124,
+   "payment_date": "2022-05-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 15,
+   "subscription_id": 2,
+   "receipt_id": 110308741,
+   "payment_date": "2022-04-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 16,
+   "subscription_id": 2,
+   "receipt_id": 138973110,
+   "payment_date": "2022-03-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 17,
+   "subscription_id": 2,
+   "receipt_id": 93736327,
+   "payment_date": "2022-02-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 18,
+   "subscription_id": 2,
+   "receipt_id": 404580503,
+   "payment_date": "2022-01-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 19,
+   "subscription_id": 2,
+   "receipt_id": 427139504,
+   "payment_date": "2021-12-10",
+   "payment_amount": 12.55
+ },
+ {
+   "payment_id": 20,
+   "subscription_id": 3,
+   "receipt_id": 29856356,
+   "payment_date": "2022-11-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 21,
+   "subscription_id": 3,
+   "receipt_id": 370983049,
+   "payment_date": "2022-10-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 22,
+   "subscription_id": 3,
+   "receipt_id": 946421502,
+   "payment_date": "2022-09-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 23,
+   "subscription_id": 3,
+   "receipt_id": 17460544,
+   "payment_date": "2022-08-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 24,
+   "subscription_id": 3,
+   "receipt_id": 887700931,
+   "payment_date": "2022-07-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 25,
+   "subscription_id": 3,
+   "receipt_id": 877674808,
+   "payment_date": "2022-06-09",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 26,
+   "subscription_id": 4,
+   "receipt_id": 542987917,
+   "payment_date": "2022-11-10",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 27,
+   "subscription_id": 4,
+   "receipt_id": 890033020,
+   "payment_date": "2022-10-10",
+   "payment_amount": 14.99
+ },
+ {
+   "payment_id": 28,
+   "subscription_id": 5,
+   "receipt_id": 842790220,
+   "payment_date": "2022-06-02",
+   "payment_amount": 99.99
+ },
+ {
+   "payment_id": 29,
+   "subscription_id": 5,
+   "receipt_id": 639522261,
+   "payment_date": "2021-06-02",
+   "payment_amount": 99.99
+ },
+ {
+   "payment_id": 30,
+   "subscription_id": 5,
+   "receipt_id": 333911030,
+   "payment_date": "2020-06-02",
+   "payment_amount": 99.99
+ },
+ {
+   "payment_id": 31,
+   "subscription_id": 6,
+   "receipt_id": 563679674,
+   "payment_date": "2022-10-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 32,
+   "subscription_id": 6,
+   "receipt_id": 689360330,
+   "payment_date": "2022-09-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 33,
+   "subscription_id": 6,
+   "receipt_id": 825249953,
+   "payment_date": "2022-08-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 34,
+   "subscription_id": 6,
+   "receipt_id": 34212911,
+   "payment_date": "2022-07-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 35,
+   "subscription_id": 6,
+   "receipt_id": 526583381,
+   "payment_date": "2022-06-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 36,
+   "subscription_id": 6,
+   "receipt_id": 603341613,
+   "payment_date": "2022-05-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 37,
+   "subscription_id": 6,
+   "receipt_id": 715244970,
+   "payment_date": "2022-04-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 38,
+   "subscription_id": 6,
+   "receipt_id": 70597083,
+   "payment_date": "2022-03-30",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 39,
+   "subscription_id": 6,
+   "receipt_id": 638182837,
+   "payment_date": "2022-02-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 40,
+   "subscription_id": 6,
+   "receipt_id": 882142491,
+   "payment_date": "2022-01-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 41,
+   "subscription_id": 6,
+   "receipt_id": 412867250,
+   "payment_date": "2021-12-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 42,
+   "subscription_id": 6,
+   "receipt_id": 910573031,
+   "payment_date": "2021-11-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 43,
+   "subscription_id": 6,
+   "receipt_id": 433413111,
+   "payment_date": "2021-10-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 44,
+   "subscription_id": 6,
+   "receipt_id": 433068526,
+   "payment_date": "2021-09-28",
+   "payment_amount": 9.99
+ },
+ {
+   "payment_id": 45,
+   "subscription_id": 7,
+   "receipt_id": 668812974,
+   "payment_date": "2022-11-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 46,
+   "subscription_id": 7,
+   "receipt_id": 678683272,
+   "payment_date": "2022-10-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 47,
+   "subscription_id": 7,
+   "receipt_id": 555639690,
+   "payment_date": "2022-09-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 48,
+   "subscription_id": 7,
+   "receipt_id": 230133789,
+   "payment_date": "2022-08-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 49,
+   "subscription_id": 7,
+   "receipt_id": 471149801,
+   "payment_date": "2022-07-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 50,
+   "subscription_id": 7,
+   "receipt_id": 287891201,
+   "payment_date": "2022-06-03",
+   "payment_amount": 3.34
+ },
+ {
+   "payment_id": 51,
+   "subscription_id": 7,
+   "receipt_id": 92486603,
+   "payment_date": "2022-05-03",
+   "payment_amount": 3.34
+ }
+]
