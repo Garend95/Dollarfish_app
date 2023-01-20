@@ -6,9 +6,9 @@ let mysql = require('mysql');
 let cors = require('cors');
 let app = express();
 let fs = require('fs');
+let connection = require('./query')
 
 require('dotenv').config({ path: '/home/gdanag/Documents/Sourcemind/Dollarfish_app/BACKEND/Backend_scripts/.env'});
-console.log(__dirname, '.env')
 
 let user_data = require('../data/user.json');
 let card_data = require('../data/credit_card.json');
@@ -17,20 +17,9 @@ let payment_data = require('../data/Payment.json');
 let logo_data = require('../data/logo_data.json');
 let category_data = require('../data/category_data.json');
 
-
 const tableCreateQuery = fs.readFileSync('/home/gdanag/Documents/Sourcemind/Dollarfish_app/BACKEND/data/Dollarfish_model.sql').toString();
 
-//console.log(userForeignKeyQuery)
-
 const { HOST, CURRENT_USER ,PASSWORD, DATABASE } = process.env 
-
-const connection = mysql.createConnection({
-    host: HOST,
-    user: CURRENT_USER,
-    password: PASSWORD,
-    database: DATABASE, 
-    multipleStatements: true
-});
 
 //https://stackoverflow.com/questions/32715273/node-mysql-throwing-connection-timeout
 connection.query(`USE ${DATABASE}`)
