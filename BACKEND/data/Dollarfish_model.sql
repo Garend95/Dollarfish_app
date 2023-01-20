@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `Payment` (
   `payment_record_id` INT NOT NULL AUTO_INCREMENT,
   `payment_id` DECIMAL(16) NOT NULL,
   `pay_sub_id` DECIMAL(16) NOT NULL,
-  `receipt_id` DECIMAL(16) NOT NULL,
+  `receipt_id` DECIMAL(16) NOT NULL UNIQUE,
   `payment_date` DATE NOT NULL,
   `payment_amount` FLOAT(16) UNSIGNED NOT NULL,
   PRIMARY KEY (`payment_record_id`),
@@ -71,11 +71,12 @@ CREATE TABLE IF NOT EXISTS `Payment` (
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Category` (
+  `cat_record_id` INT NOT NULL AUTO_INCREMENT,
   `cat_sub_id` DECIMAL(16) NOT NULL,
   `first_category` VARCHAR(45) NULL,
   `second_category` VARCHAR(45) NULL,
   `third_category` VARCHAR(45) NULL,
-  PRIMARY KEY (`cat_sub_id`),
+  PRIMARY KEY (`cat_record_id`),
   CONSTRAINT `cat_sub_id` 
     FOREIGN KEY (`cat_sub_id`)
     REFERENCES `subscription` (`subscription_id`)
