@@ -17,8 +17,8 @@ const fillUserData = function(data) {
 }
 
 const fillCategoryData = function(data) {
-    let insertCommand = `INSERT INTO Category (
-        sub_id,
+    let insertCommand = `INSERT IGNORE INTO Category (
+        cat_sub_id,
         first_category,
         second_category,
         third_category)\
@@ -33,9 +33,9 @@ const fillCategoryData = function(data) {
 }
 
 const fillPaymentData = function(data) {
-    let insertCommand = `INSERT INTO Payment (
+    let insertCommand = `INSERT IGNORE INTO Payment (
         payment_id,
-        subscription_id,
+        pay_sub_id,
         receipt_id,payment_date, 
         payment_amount)\
         VALUES (
@@ -49,7 +49,7 @@ const fillPaymentData = function(data) {
 }
 
 const fillSubscriptionData = function(data) {
-    let insertCommand = `INSERT INTO subscription (
+    let insertCommand = `INSERT IGNORE INTO subscription (
         subscription_id, 
         card_id, 
         subscription_name, 
@@ -73,12 +73,17 @@ const fillSubscriptionData = function(data) {
             ${data.sub_pay_id}
             );`
 
-    this.connection.query(insertCommand)
+    try {    
+        this.connection.query(insertCommand)
+    } catch (error) {
+        console.log(error)
+        console.log('problem with inserting, possible foreign key problem')
+    }
 }
 
 const fillLogoData = function(data) {
-    let insertCommand = `INSERT INTO logos (
-        subscription_id, 
+    let insertCommand = `INSERT IGNORE INTO logos (
+        logo_sub_id, 
         subscription_logo) \
         VALUES (
             ${data.subscription_id}, 
@@ -89,7 +94,7 @@ const fillLogoData = function(data) {
 
 
 const fillCreditCardData = function(data) {
-    let insertCommand = `INSERT INTO credit_card (
+    let insertCommand = `INSERT IGNORE INTO credit_card (
         card_id,
         card_brand,
         card_issuer,
@@ -120,6 +125,8 @@ const insertMethods = function(methodName) {
             return fillSubscriptionData;
         case 'logo': 
             return fillLogoData;
+        case 'category':
+            return fillCategoryData;
         default:
             console.log("error in filling data")
             return -1;
