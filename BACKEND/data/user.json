@@ -1,9 +1,9 @@
 [
 	{
-		"first_name" : "Garen",
-		"last_name" : "Danageozian",
+		"first_name" : "John",
+		"last_name" : "Smith",
 		"user_id" : 1,
-		"email" : "garen.danageozian@gmail.com",
+		"email" : "john.smith@gmail.com",
 		"password" : "Testing123A!"
 	}
 ]
