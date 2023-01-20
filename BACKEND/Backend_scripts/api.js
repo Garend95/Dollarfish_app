@@ -6,7 +6,7 @@ let mysql = require('mysql');
 let cors = require('cors');
 let app = express();
 let fs = require('fs');
-let connection = require('./query')
+let { connection, fillData } = require('./query')
 
 require('dotenv').config({ path: '/home/gdanag/Documents/Sourcemind/Dollarfish_app/BACKEND/Backend_scripts/.env'});
 
@@ -131,27 +131,23 @@ const fillCreditCardData = function(data) {
         credit_limit,
         expiration_date,
         user_id)\
-    VALUES (
-        ${data.card_id},
-        "${data.card_brand}",
-        "${data.card_issuer}",
-        ${data.credit_limit},
-        "${data.expiration_date}", 
-        ${data.user_id}
-        )`
+        VALUES (
+            ${data.card_id},
+            "${data.card_brand}",
+            "${data.card_issuer}",
+            ${data.credit_limit},
+            "${data.expiration_date}", 
+            ${data.user_id}
+            )`
 
     connection.query(insertCommand);
 }
 
-let fillData = function(data, fillingFunction) {
-    for(let i = 0; i < data.length; i++)
-        fillingFunction(data[i]);
-}
 
 
-fillData(user_data, fillUserData);
-fillData(card_data, fillCreditCardData);
-fillData(subscription_data, fillSubscriptionData); 
+fillData('user_data', fillUserData);
+fillData('card_data', fillCreditCardData);
+fillData('subscription_data', fillSubscriptionData); 
 
 const corsOptions = {
     origin: "http://127.0.0.1:5500",
