@@ -1,32 +1,14 @@
 [
  {
-   "sub_id": 11,
+   "sub_id": 1,
    "first_category": "Productivity",
    "second_category": "Creativity",
    "third_category": ""
  },
  {
-   "sub_id": 12,
+   "sub_id": 2,
    "first_category": "Productivity",
    "second_category": "Communication",
-   "third_category": ""
- },
- {
-   "sub_id": 31,
-   "first_category": "Entertainment",
-   "second_category": "",
-   "third_category": ""
- },
- {
-   "sub_id": 57,
-   "first_category": "Productivity",
-   "second_category": "",
-   "third_category": ""
- },
- {
-   "sub_id": 621,
-   "first_category": "Productivity",
-   "second_category": "Family",
    "third_category": ""
  },
  {
@@ -36,7 +18,25 @@
    "third_category": ""
  },
  {
-   "sub_id": 9,
+   "sub_id": 4,
+   "first_category": "Productivity",
+   "second_category": "",
+   "third_category": ""
+ },
+ {
+   "sub_id": 5,
+   "first_category": "Productivity",
+   "second_category": "Family",
+   "third_category": ""
+ },
+ {
+   "sub_id": 6,
+   "first_category": "Entertainment",
+   "second_category": "",
+   "third_category": ""
+ },
+ {
+   "sub_id": 7,
    "first_category": "Education",
    "second_category": "Entertainment",
    "third_category": ""
